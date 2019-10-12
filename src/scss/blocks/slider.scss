@@ -16,6 +16,16 @@
   }
 }
 
+@media (max-width: 800px) {
+  .slider__slide {
+    img {
+      width: 250px;
+      height: 160px;
+    }
+  }
+
+}
+
 
 @keyframes opacity {
   0% {
