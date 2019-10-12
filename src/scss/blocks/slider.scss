@@ -1,0 +1,46 @@
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+  .slider__slide {
+    position: absolute;
+    animation: fade 0.5s ease-out;
+    opacity: 0;
+  }
+
+  .active {
+    position: static;
+    animation: opacity 0.5s ease-in;
+    opacity: 1;
+  }
+}
+
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

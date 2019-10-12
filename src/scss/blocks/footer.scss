@@ -1,0 +1,18 @@
+.main-footer {
+  color: #444444;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 25px 0;
+  background-color: $header-bgc;
+
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .footer__info {
+    flex-grow: 1;
+  }
+}

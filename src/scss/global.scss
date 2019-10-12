@@ -1,0 +1,15 @@
+body {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  line-height: 21px;
+  background-color: $main-bgc;
+}
+
+a {
+  @include link-reset;
+}
+
+.wrapper {
+  padding: 0 5%;
+}

@@ -1,0 +1,56 @@
+.about {
+  h2 {
+    font-size: 35px;
+    line-height: 2.5;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+.about__list {
+  @include list-reset;
+  padding-left: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about__item {
+  padding-bottom: 25px;
+  cursor: pointer;
+
+  span {
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .closed {
+    display: none;
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    h3 {
+      opacity: 0.8;
+    }
+
+    span {
+      transform: scale(1.5);
+    }
+
+    .rotate {
+      opacity: 0.5;
+      transform: scale(1.5) rotate(90deg);
+    }
+  }
+
+
+}

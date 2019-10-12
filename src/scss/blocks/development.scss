@@ -1,0 +1,15 @@
+.development {
+  display: flex;
+  flex-grow: 1;
+
+  p {
+    margin: 0;
+    width: 100%;
+  }
+
+  .development__link {
+    @include link-reset;
+    width: 100%;
+    text-align: right;
+  }
+}

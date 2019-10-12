@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  background-color: $header-bgc;
+
+  .header__head {
+    width: 50%;
+    top: 0;
+    right: 150px;
+    position: absolute;
+    line-height: 1.1;
+    text-align: center;
+    color: #453e70;
+  }
+}

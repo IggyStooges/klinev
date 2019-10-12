@@ -1,0 +1,29 @@
+.social {
+  flex-grow: 1;
+}
+
+.social__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+
+  .social__item {
+    margin-left: 3%;
+  }
+}
+
+.social__link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: rgb(129, 179, 210);
+  border-radius: 50%;
+  font-size: 0px;
+  line-height: 0px;
+}
