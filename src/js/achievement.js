@@ -19,13 +19,15 @@ export default function runSwiper() {
     achievs.forEach((element, index) => {
       element.addEventListener('click', () => {
         achievmentSlider.classList.add('achievment__slider--open');
-        const swiper = new Swiper('.swiper-container', {
-          loop: true,
-          initialSlide: index,
-          observer: true,
-          observeParents: true
-        });
+
       })
+
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        initialSlide: index,
+        observer: true,
+        observeParents: true
+      });
 
       if (overlay) {
         overlay.addEventListener('click', () => achievmentSlider.classList.remove('achievment__slider--open'));
