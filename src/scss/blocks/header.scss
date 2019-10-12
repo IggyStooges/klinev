@@ -1,14 +1,47 @@
-.header {
-  position: relative;
-  background-color: $header-bgc;
+  .header {
+    position: relative;
+    background-color: $header-bgc;
+  }
 
   .header__head {
     width: 50%;
+    line-height: 1.1;
     top: 0;
     right: 150px;
     position: absolute;
-    line-height: 1.1;
     text-align: center;
     color: #453e70;
   }
-}
+
+  @media (max-width: 800px) {
+    .header__head {
+      position: static;
+      order: 2;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .header {
+      .wrapper {
+        display: block;
+      }
+    }
+  }
+
+
+  @media (min-width: 800px) and (max-width: 1024px) {
+    .header__head {
+      position: static;
+      order: 2;
+      font-size: 25px;
+      line-height: 1.1;
+
+    }
+
+    .header {
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }

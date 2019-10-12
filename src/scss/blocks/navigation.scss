@@ -29,3 +29,19 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .navigation__list {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+
+    li:first-child {
+      align-self: center;
+    }
+
+    li {
+      padding-top: 5px;
+    }
+  }
+}
